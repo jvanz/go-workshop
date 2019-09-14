@@ -31,7 +31,7 @@ arr[2] = 9
 Você pode usar ```...``` na definição de capacidade de uma array, e deixar o compilador definir sua capacidade baseada nos elementos na declaração.
 
 ```golang
-var arr [...] int{1, 2}
+arr := [...]int{1, 2}
 ```
 
 No caso acima o tamanho da array vai ser de 2 elementos.
@@ -55,7 +55,7 @@ func main() {
 
 Visto tudo isto, podemos dizer:
 
-Arrays são limitadas para casos específicos onde os valores podem mudar em tempo de execução.
+Arrays são limitadas para casos específicos onde os valores não podem mudar em tempo de execução.
 
 Mas não se preocupe, para isto temos os *Slices*.
 
